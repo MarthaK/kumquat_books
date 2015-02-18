@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<HTML ng-app="kumquat">
+
+<head>
+	<meta charset="utf-8">
+	<title>Kumquat Books Online</title>
+	<meta name="viewport" content="width=device-width">
+
+
+
+	<script src="bower_components/angular/angular.min.js"></script>
+	<script src="bower_components/angular-resource/angular-resource.min.js"></script>
+	<script src="bower_components/angular-route/angular-route.min.js"></script>
+	<script src="js/jquery-1.11.0.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/controllers.js"></script>
+
+	<style>
+
+		* { box-sizing: border-box; }
+		body { font: 14px/1.5 sans-serif; color: #222; margin: 3em; }
+		table, input { width: 100%; } 
+		th { text-align: left; }
+
+	</style>
+
+	
+</head>
+
+<body>
+
+<div ng-controller="Products">
+	<h1>Books</h1>
+<!-- Product List -->
+	<table>
+		<tr>
+			<th>Title</th>
+			<th>Author</th>
+			<th>Price</th>
+			<th>Description</th>
+			<th>Date Added</th>
+		</tr>
+		<tr ng-repeat="product in products">
+			<td>{{product.book_title}}</td>
+			<td>{{product.author}}</td>
+			<td>{{product.price}}</td>
+			<td>{{product.description}}</td>
+			<td>{{product.date_added}}</td>
+		</tr>
+	</table>
+<!-- /Product List -->
+</div>
+
+</body>
+
+</HTML>

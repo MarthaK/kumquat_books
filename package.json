@@ -1,0 +1,32 @@
+{
+  "name": "kumquat_book_service",
+  "version": "1.0.0",
+  "description": "An online book store",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Martha Kumi <martha.kumi@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.3.13",
+    "angular-resource": "^1.3.13",
+    "angular-route": "^1.3.13",
+    "body": "^4.6.0",
+    "express": "^4.11.2",
+    "favicon": "0.0.2",
+    "jquery": "^2.1.3",
+    "logger": "0.0.1",
+    "mongoose": "^3.8.23",
+    "parser": "^0.1.4",
+    "toastr": "^2.0.4"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "books",
+    "ecommerce",
+    "online",
+    "bookstore"
+  ]
+}
